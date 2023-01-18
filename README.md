@@ -4,6 +4,12 @@
 
 This repo includes some of my personal tool preferences.
 
+Install some dependencies:
+
+```bash
+apt-get install -yq vim vim-pathogen
+```
+
 ## Weblinks
 
 - **Linux**
