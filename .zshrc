@@ -79,7 +79,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker docker-compose emoji golang git git-prompt gitignore helm kubectl themes)
+plugins=(docker docker-compose emoji golang git git-prompt gitignore helm kubectl kubectl-autocomplete themes)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,6 +117,8 @@ alias d='docker'
 alias dc='docker compose'
 alias docker-compose='docker compose'
 alias kubectl='kubecolor'
+alias cat='ccat'
+alias dive="docker run -ti --rm -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
 
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
