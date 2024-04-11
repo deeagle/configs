@@ -8,6 +8,6 @@ echo "[INFO] Lint shell scripts ..."
 find . -type f -name '*.sh' -not -path "./vendor/*" -exec shellcheck {} +
 
 echo "[INFO] Lint markdown files ..."
-docker run --rm -i -v "${PWD}:/workdir" davidanson/markdownlint-cli2 "**/*.md"
+docker run --rm -v "$(pwd):/app" docdee/mdlint -c /app/.markdownlint.yml "**/*.md"
 
 echo "[ OK ] Running CI successfully finished."
