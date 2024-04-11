@@ -120,7 +120,8 @@ alias kubectl='kubecolor'
 alias cat='ccat'
 alias dive="docker run -ti --rm -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
 alias gs='git status'
-alias grmb='git branch --merged | egrep -v "(^\*|master|main|topic)" | xargs git branch -d'
+# git remove merged branches
+alias grmb='git branch --merged | egrep -v "(^\*|master|main|topic)" | xargs -r git branch -d'
 
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
