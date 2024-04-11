@@ -10,15 +10,14 @@ on:
 
 jobs:
   lint-readme:
-    name: Lint readme file
+    name: Lint and style
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
         uses: actions/checkout@v4
 
       - name: Lint readme file
-        uses: avto-dev/markdown-lint@v1
+        uses: DavidAnson/markdownlint-cli2-action@v16
         with:
-          #rules: '/lint/rules/changelog.js'
-          #config: '/lint/config/changelog.yml'
-          args: 'README.md'
+          config: .markdownlint.yml
+          globs: '**/*.{md,markdown}'
