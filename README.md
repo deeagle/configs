@@ -13,15 +13,22 @@ apt-get install -yq vim vim-pathogen
 ## ZSH
 
 - install [oh-my-zsh](https://ohmyz.sh)
-- add powerlevel10k-theme, e.g.:
+- add powerlevel10k-theme, solarized dircolors e.g.:
   - install
     - `mkdir -p ~/Workspace/apps`
     - `cd ~/Workspace/apps`
     - `git clone https://github.com/romkatv/powerlevel10k.git`
-  - config
+    - `git clone git@github.com:seebi/dircolors-solarized.git`
+  - config (or use `.zshrc` from this repo)
     - `vim ~/.zshrc`
     - search for line `^ZSH_THEME=` and comment line
     - add `source $HOME/Workspace/apps/powerlevel10k/powerlevel10k.zsh-theme`
+    - add solarized `LS_COLORS`:
+
+      ```bash
+      eval `dircolors $HOME/Workspace/apps/dircolors-solarized/dircolors.256dark`
+      ```
+
     - exit
   - sync zshrc via `source ~/.zshrc`
   - prompt configs
