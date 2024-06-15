@@ -38,6 +38,7 @@ apt-get install -yq vim vim-pathogen
     - choose:
       - answer the questions
       - `cp .p10k.zsh ~/.p10k.zsh`
+  - add `kubectl` autocompletion `source <(kubectl completion zsh)` 
 
 ## Weblinks
 
@@ -49,6 +50,7 @@ apt-get install -yq vim vim-pathogen
   - [https://github.com/wagoodman/dive]
   - [https://github.com/owenthereal/ccat]
   - [https://github.com/kubecolor/kubecolor]
+  - [https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#enable-shell-autocompletion]
 - **Windows**
   - [https://www.youtube.com/watch?v=VT2L1SXFq9U]
     - [https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal]
