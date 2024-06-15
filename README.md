@@ -30,6 +30,9 @@ apt-get install -yq vim vim-pathogen
       ```
 
     - exit
+  - install kubecolor
+    - get kubecolor release from github
+    - `mv kubecolor /usr/local/bin/kubecolor`
   - sync zshrc via `source ~/.zshrc`
   - prompt configs
     - choose:
