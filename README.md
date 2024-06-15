@@ -38,7 +38,7 @@ apt-get install -yq vim vim-pathogen
     - choose:
       - answer the questions
       - `cp .p10k.zsh ~/.p10k.zsh`
-  - add `kubectl` autocompletion `source <(kubectl completion zsh)` 
+  - add `kubectl` autocompletion `source <(kubectl completion zsh)`
 
 ## Weblinks
 
