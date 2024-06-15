@@ -42,6 +42,7 @@ apt-get install -yq vim vim-pathogen
   - [https://github.com/Peltoche/lsd]
   - [https://ohmyz.sh]
   - [https://github.com/romkatv/powerlevel10k]
+  - [https://github.com/seebi/dircolors-solarized]
   - [https://github.com/wagoodman/dive]
   - [https://github.com/owenthereal/ccat]
   - [https://github.com/kubecolor/kubecolor]
