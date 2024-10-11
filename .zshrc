@@ -87,9 +87,35 @@ HIST_STAMPS="dd.mm.yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 if [[ -n "${K8S_OP}" ]]; then
-      plugins=(docker docker-compose emoji golang git git-prompt gitignore helm kubectl kubectl-autocomplete themes helloworld)
+      plugins=(
+        docker
+        docker-compose
+        emoji
+        golang
+        git
+        git-prompt
+        gitignore
+        helm
+        kubectl
+        kubectl-autocomplete
+        themes
+        helloworld
+        wsltmpcleaner
+        #zsh-autosuggestions
+        zsh-syntax-highlighting
+      )
 else
-      plugins=(docker docker-compose emoji golang git git-prompt gitignore themes helloworld)
+      plugins=(
+        docker
+        docker-compose
+        emoji
+        golang
+        git
+        git-prompt
+        gitignore
+        themes
+        helloworld
+     )
 fi
 
 source $ZSH/oh-my-zsh.sh
