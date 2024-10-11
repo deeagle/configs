@@ -164,6 +164,13 @@ alias gmbr='git branch --merged | egrep -v "(^\*|master|main|topic)" | xargs -r 
 # azure stuff
 alias azcr='az acr login -n crzpiddev'
 
+if [[ -n "${K8S_OP}" ]]; then
+  # kubectl autocompletion
+  autoload -Uz compinit
+  compinit
+  source <(kubectl completion zsh)
+fi
+
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
