@@ -82,7 +82,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-if [[ -n "${KUBE_OP}" ]]; then
+if [[ -n "${K8S_OP}" ]]; then
       plugins=(docker docker-compose emoji golang git git-prompt gitignore helm kubectl kubectl-autocomplete themes helloworld)
 else
       plugins=(docker docker-compose emoji golang git git-prompt gitignore themes helloworld)
