@@ -11,6 +11,10 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# TMUX plugin
+# //does not fit my needs, start tmux manually
+# ZSH_TMUX_AUTOSTART=true
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -129,6 +133,10 @@ alias dive="docker run -ti --rm -v /var/run/docker.sock:/var/run/docker.sock wag
 alias gs='git status'
 # git remove merged branches
 alias grmb='git branch --merged | egrep -v "(^\*|master|main|topic)" | xargs -r git branch -d'
+alias gmb='git branch --merged | egrep -v "(^\*|master|main|topic)" | xargs git branch -d'
+alias gmbr='git branch --merged | egrep -v "(^\*|master|main|topic)" | xargs -r git branch -d'
+# azure stuff
+alias azcr='az acr login -n crzpiddev'
 
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
