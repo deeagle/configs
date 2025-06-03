@@ -24,7 +24,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 if [[ "${USER}" == "deeagle" ]]; then
   source $HOME/Workspace/apps/powerlevel10k/powerlevel10k.zsh-theme
-elif [[ ${USER}" == "root" ]]; then
+elif [[ "${USER}" == "root" ]]; then
   ZSH_THEME="af-magic"
 else
   ZSH_THEME="agnoster"
