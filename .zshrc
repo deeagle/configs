@@ -86,7 +86,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-if [[ -n "${K8S_OP}" ]]; then
+if [[ -n "${K8S_OP}" && "${K8S_OP}" == "true" ]]; then
       plugins=(
         docker
         docker-compose
@@ -164,7 +164,7 @@ alias gmbr='git branch --merged | egrep -v "(^\*|master|main|topic)" | xargs -r 
 # azure stuff
 alias azcr='az acr login -n crzpiddev'
 
-if [[ -n "${K8S_OP}" ]]; then
+if [[ -n "${K8S_OP}" && "${K8S_OP}" == "true" ]]; then
   # kubectl autocompletion
   autoload -Uz compinit
   compinit
