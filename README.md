@@ -40,6 +40,14 @@ apt-get install -yq vim vim-pathogen
       - `cp .p10k.zsh ~/.p10k.zsh`
   - add `kubectl` autocompletion `source <(kubectl completion zsh)`
 
+## TMUX
+
+- install [tpm](https://github.com/tmux-plugins/tpm):
+  - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+  - `cp .tmux.conf ~/.tmux.conf`
+  - exec `CTRL + I` to update tmux-plugins
+  - restart tmux
+
 ## Weblinks
 
 - **Linux** (and mostly WSL)
@@ -51,6 +59,9 @@ apt-get install -yq vim vim-pathogen
   - [https://github.com/owenthereal/ccat]
   - [https://github.com/kubecolor/kubecolor]
   - [https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#enable-shell-autocompletion]
+  - tmux
+    - [https://github.com/catppuccin/tmux]
+    - [https://github.com/tmux-plugins/tpm]
 - **Windows**
   - [https://www.youtube.com/watch?v=VT2L1SXFq9U]
     - [https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal]
